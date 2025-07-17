@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Tab Refresher",
+  "version": "1.0",
+  "description": "Refreshes the active tab at a specified interval.",
+  "permissions": [
+    "tabs",
+    "storage",
+    "alarms"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "browser_action": {
+    "default_icon": {
+      "48": "icons/icon-48.png"
+    },
+    "default_title": "Tab Refresher",
+    "default_popup": "options.html"
+  },
+  "icons": {
+    "48": "icons/icon-48.png"
+  }
+}
