@@ -8,7 +8,7 @@ function saveOptions(e) {
 
 function restoreOptions() {
   function setCurrentChoice(result) {
-    document.querySelector("#interval").value = result.interval || 5;
+    document.querySelector("#interval").value = result.interval || 30;
   }
 
   function onError(error) {
@@ -20,4 +20,4 @@ function restoreOptions() {
 }
 
 document.addEventListener("DOMContentLoaded", restoreOptions);
-document.querySelector("form").addEventListener("submit", saveOptions);
+document.querySelector("#save").addEventListener("click", saveOptions);
